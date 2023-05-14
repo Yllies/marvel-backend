@@ -6,7 +6,6 @@ const axios = require("axios");
 const cors = require("cors");
 app.use(cors());
 
-// Route qui affiche les comics
 app.get("/comics", async (req, res) => {
   try {
     const response = await axios.get(
